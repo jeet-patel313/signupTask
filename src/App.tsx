@@ -1,5 +1,6 @@
 import './App.css';
-import SignUpForm from './components/SignUpForm'; // Assuming SignUpForm.js or SignUpForm.tsx is in the same directory
+import SignUpForm from './components/SignUpForm';
+import { apiUrl } from './constants/apiUrls';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <h3>AAK TELE-SCIENCE API - Sign Up Form</h3>
       </header>
       <main>
-        <SignUpForm apiUrl="https://django-dev.aakscience.com/signup/" />
+        <SignUpForm apiUrl={apiUrl} /> 
       </main>
       <footer>
         <h5>Developed by Jeet Patel</h5>

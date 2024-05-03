@@ -11,15 +11,7 @@ import {
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SelectChangeEvent } from '@mui/material/Select';
-
-interface FormData {
-  user_type: string;
-  first_name: string;
-  last_name: string;
-  username: string;
-  email: string;
-  password: string;
-}
+import { FormData } from '../types';
 
 interface SignUpFormProps {
   apiUrl: string;
